@@ -3,13 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的网页</title>
+  <title>Winchery 性格测试</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>我的第一个网页</h1>
-  <p>正在学习制作网页～</p>
+  <div class="box">
+    <h1>Winchery 性格测试</h1>
+    <p>回答 3 个小问题，看看你的隐藏性格～</p>
+
+    <div class="question">
+      <h3>1. 周末你更倾向于？</h3>
+      <label><input type="radio" name="q1" value="a"> 宅家休息</label>
+      <label><input type="radio" name="q1" value="b"> 出门玩耍</label>
+    </div>
+
+    <div class="question">
+      <h3>2. 遇到难题你会？</h3>
+      <label><input type="radio" name="q2" value="a"> 冷静思考</label>
+      <label><input type="radio" name="q2" value="b"> 找人帮忙</label>
+    </div>
+
+    <div class="question">
+      <h3>3. 你更喜欢？</h3>
+      <label><input type="radio" name="q3" value="a"> 安静环境</label>
+      <label><input type="radio" name="q3" value="b"> 热闹氛围</label>
+    </div>
+
+    <button onclick="showResult()">查看结果</button>
+
+    <div id="result" class="result"></div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
